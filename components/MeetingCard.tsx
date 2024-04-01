@@ -58,7 +58,7 @@ const MeetingCard = ({
           ) : (
             icon
           )}
-          {!call?.state.endedAt && (
+          {call && !call?.state.endedAt && (
             <Button
               variant="ghost"
               size={'icon'}
